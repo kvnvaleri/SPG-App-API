@@ -6,6 +6,7 @@ const targetRealisasiWrapperAPI = require('./wrapper/targetRealisasiWrapperAPI')
 const listOutletWrapperAPI = require('./wrapper/listOutletWrapperAPI');
 const listProductInputWrapperAPI = require('./wrapper/listProductInputWrapperAPI');
 const saldoAwalWrapperAPI = require('./wrapper/saldoAwalWrapperAPI');
+const absenWrapperAPI = require('./wrapper/absenWrapperAPI');
 
 app.use(express.urlencoded({ extended: true }));
 
@@ -14,6 +15,7 @@ app.use('/api/target_vs_realisasi', targetRealisasiWrapperAPI);
 app.use('/api/list_outlet', listOutletWrapperAPI)
 app.use('/api/list_product', listProductInputWrapperAPI)
 app.use('/api/saldoawal', saldoAwalWrapperAPI)
+app.use('/api/absen', absenWrapperAPI)
 
 const port = process.env.PORT || 3000
 app.listen(port, () => {
