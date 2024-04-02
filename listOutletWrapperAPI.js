@@ -10,7 +10,7 @@ const httpsAgent = new https.Agent({
 router.post('/', async (req, res) => {
   try {
     const formData = new URLSearchParams(req.body).toString();
-    const response = await axios.post('https://mnjpt.com:97/api/spg/transaksi_spg/real_list_product_spg.php', formData, {
+    const response = await axios.post('https://mnjpt.com:97/api/spg/transaksi_spg/list_outlet.php', formData, {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       httpsAgent: httpsAgent,
     });
