@@ -7,7 +7,7 @@ const fs = require('fs');
 const router = express.Router();
 const upload = multer({ storage: multer.memoryStorage() });
 
-router.post('/', upload.single('file'), async (req, res) => {
+router.post('/', upload.single('file_data'), async (req, res) => {
   try {
     const formData = new FormData();
     if (req.file) {
