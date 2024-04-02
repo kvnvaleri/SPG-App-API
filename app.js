@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
 
-const listProductWrapperAPI = require('./listProductWrapperAPI');
-const targetRealisasiWrapperAPI = require('./targetRealisasiWrapperAPI');
-const listOutletWrapperAPI = require('./listOutletWrapperAPI');
-const listProductInputWrapperAPI = require('./listProductInputWrapperAPI');
-const saldoAwalWrapperAPI = require('./saldoAwalWrapperAPI');
+const listProductWrapperAPI = require('./wrapper/listProductWrapperAPI');
+const targetRealisasiWrapperAPI = require('./wrapper/targetRealisasiWrapperAPI');
+const listOutletWrapperAPI = require('./wrapper/listOutletWrapperAPI');
+const listProductInputWrapperAPI = require('./wrapper/listProductInputWrapperAPI');
+const saldoAwalWrapperAPI = require('./wrapper/saldoAwalWrapperAPI');
 
 app.use(express.urlencoded({ extended: true }));
 
